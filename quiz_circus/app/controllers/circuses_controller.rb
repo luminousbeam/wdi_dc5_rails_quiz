@@ -4,7 +4,7 @@ class CircusesController < ApplicationController
   end
 
   def show
-
+    @circus = Circus.find(params[:name], params[:image_url])
   end
 
   def new
