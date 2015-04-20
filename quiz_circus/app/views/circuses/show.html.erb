@@ -1,1 +1,8 @@
+<% link_to Circuses,'circuses#index' %>
 
+<%= @circus.name %>
+
+<% @entertainers.each do |entertainer| %>
+  <p><%= entertainer.name %></p>
+  <p><%= entertainer.specialty %></p>
+<% end %>
